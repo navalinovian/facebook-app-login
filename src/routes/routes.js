@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "../pages/Home";
 import Login from "../pages/Login";
 import Other from "../pages/Other";
+import Halaman from "../pages/Halaman";
+import Sukai from "../pages/Sukai";
 
 export default class routes extends Component {
   // componentDidMount() {
@@ -23,6 +25,12 @@ export default class routes extends Component {
             </Route>
             <Route path="/other" component={Other}>
               <Other />
+            </Route>
+            <Route exact path="/halaman" component={Halaman}>
+              <Halaman />
+            </Route>
+            <Route exact path="/sukai" component={Sukai}>
+              <Sukai />
             </Route>
             <Route exact path="/" component={Login}>
               <Login />
