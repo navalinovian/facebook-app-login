@@ -6,7 +6,8 @@ import FacebookProvider, {
   Page,
   EmbeddedPost,
   SendToMessenger,
-  MessageUs
+  MessageUs,
+  Comments
 } from "react-facebook-sdk";
 
 export default class Home extends Component {
@@ -106,6 +107,15 @@ export default class Home extends Component {
                       appId="1049503778763466"
                       pageId="101471541370845"
                     />
+                  </FacebookProvider>
+                </div>
+                <div className="Komen">
+                  <FacebookProvider appId="1049503778763466">
+                    <Comments
+                      appId="1049503778763466"
+                      pageId="101471541370845"
+                    >
+                    </Comments>
                   </FacebookProvider>
                 </div>
                 <div className="button-logout">
