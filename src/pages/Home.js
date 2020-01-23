@@ -12,6 +12,15 @@ import FacebookProvider, {
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, NavbarBrand, NavItem } from "react-bootstrap";
 
+import {
+Collapse,
+NavbarToggler,
+Nav,
+NavLink,
+} from 'reactstrap';
+
+
+
 export default class Home extends Component {
   constructor(props) {
     super(props);
@@ -68,20 +77,22 @@ export default class Home extends Component {
   src="https://www.facebook.com/tr?id=209863870048264&ev=PageView&noscript=1"
     />}</noscript>
           </Helmet> */}
-          <Navbar>
-            <NavbarBrand>
-              HALOOOOO
-            </NavbarBrand>
-            <div>
-              <NavItem> coba 1</NavItem>
-            </div>
-            <div>
-              <NavItem> coba 2</NavItem>
-            </div>
-            <div>
-              <NavItem> coba 3</NavItem>
-            </div>
-          </Navbar>
+          <div>
+            <Navbar color="faded" light>
+              <NavbarBrand href="" className="mr-auto">reactstrap</NavbarBrand>
+              <NavbarToggler className="mr-2" />
+              <Collapse navbar>
+                <Nav navbar>
+                  <NavItem>
+                    <NavLink href="">Components</NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink href="https://github.com/reffanpandu">GitHub</NavLink>
+                  </NavItem>
+                </Nav>
+              </Collapse>
+            </Navbar>
+          </div>
 
           <div class="">
             <div class="">
