@@ -9,6 +9,8 @@ import FacebookProvider, {
   MessageUs,
   Comments
 } from "react-facebook-sdk";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Navbar, NavbarBrand, NavItem } from "react-bootstrap";
 
 export default class Home extends Component {
   constructor(props) {
@@ -66,8 +68,23 @@ export default class Home extends Component {
   src="https://www.facebook.com/tr?id=209863870048264&ev=PageView&noscript=1"
     />}</noscript>
           </Helmet> */}
-          <div class="container-fluid">
-            <div class="row">
+          <Navbar>
+            <NavbarBrand>
+              HALOOOOO
+            </NavbarBrand>
+            <div>
+              <NavItem> coba 1</NavItem>
+            </div>
+            <div>
+              <NavItem> coba 2</NavItem>
+            </div>
+            <div>
+              <NavItem> coba 3</NavItem>
+            </div>
+          </Navbar>
+
+          <div class="">
+            <div class="">
               <div className="Home-Content" style={styles.mainContent}>
                 <div className="isi" style={styles.wrapper}>
                   HOME
